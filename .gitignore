@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs and runtime artifacts
+logs/
+*.log
+npm-debug.log*
+
+# Recorded capture files
+recordings/
+*.bin
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# Coverage and build output
+coverage/
+dist/
+.cache/

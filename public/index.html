@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirror Receiver Control</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <h1>Mirror Receiver</h1>
+          <p>Local TCP media receiver control</p>
+        </div>
+        <button id="stopServerBtn" class="danger">Stop server</button>
+      </header>
+
+      <div class="summary" id="summary"></div>
+
+      <section class="panel">
+        <h2>Pending connections</h2>
+        <div id="pendingList" class="list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Accepted streams</h2>
+        <div id="activeList" class="list"></div>
+      </section>
+    </div>
+
+    <script src="/public/app.js"></script>
+  </body>
+</html>

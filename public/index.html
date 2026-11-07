@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mirror Receiver Control</title>
+    <title>WebRTC Mirror Receiver</title>
     <link rel="stylesheet" href="/public/styles.css" />
   </head>
   <body>
@@ -11,12 +11,24 @@
       <header class="topbar">
         <div>
           <h1>Mirror Receiver</h1>
-          <p>Local TCP media receiver control</p>
+          <p>Direct screen and audio playback over WebRTC</p>
         </div>
         <button id="stopServerBtn" class="danger">Stop server</button>
       </header>
 
       <div class="summary" id="summary"></div>
+
+      <section class="panel player-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Live feed</h2>
+            <p id="connectionStatus" class="status">Waiting for a mobile sender</p>
+          </div>
+          <button id="fullscreenBtn" class="secondary" type="button">Fullscreen</button>
+        </div>
+        <video id="remoteVideo" autoplay playsinline controls></video>
+        <p class="hint">Open <a id="senderLink" href="/sender">this sender page</a> on the phone. Android 10+ playback audio uses the WebRTC data channel; apps can block playback capture.</p>
+      </section>
 
       <section class="panel">
         <h2>Pending connections</h2>

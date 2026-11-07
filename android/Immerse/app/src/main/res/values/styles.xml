@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.Immerse" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#38BDF8</item>
+        <item name="android:navigationBarColor">#0F172A</item>
+        <item name="android:statusBarColor">#0F172A</item>
+    </style>
+</resources>

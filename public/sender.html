@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Screen and Audio</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <main class="sender app">
+      <section class="panel sender-panel">
+        <p class="eyebrow">Mirror sender</p>
+        <h1>Share this phone</h1>
+        <p class="hint">Start sharing, then approve the connection on the laptop dashboard.</p>
+        <button id="startBtn" class="accept" type="button">Start screen and audio</button>
+        <button id="stopBtn" class="secondary" type="button" disabled>Stop sharing</button>
+        <p id="status" class="status">Ready</p>
+        <video id="preview" autoplay muted playsinline></video>
+      </section>
+    </main>
+    <script src="/public/sender.js"></script>
+  </body>
+</html>

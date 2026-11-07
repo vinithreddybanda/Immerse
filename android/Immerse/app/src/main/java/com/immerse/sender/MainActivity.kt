@@ -176,7 +176,7 @@ class MainActivity : ComponentActivity() {
 
     private fun startPlaybackCapture() {
         val projection = mediaProjection ?: return
-        val captureConfig = android.media.projection.AudioPlaybackCaptureConfiguration.Builder(projection)
+        val captureConfig = android.media.AudioPlaybackCaptureConfiguration.Builder(projection)
             .addMatchingUsage(AudioAttributes.USAGE_MEDIA)
             .addMatchingUsage(AudioAttributes.USAGE_GAME)
             .addMatchingUsage(AudioAttributes.USAGE_UNKNOWN)
